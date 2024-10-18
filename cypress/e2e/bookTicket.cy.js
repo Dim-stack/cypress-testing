@@ -1,6 +1,6 @@
 import BookTicket from '../support/bookTicket.js'
 
-describe('book ticket', () => {
+describe('ticket reservation', () => {
 
   const bookTicket = new BookTicket()
 
@@ -12,10 +12,8 @@ describe('book ticket', () => {
   }
 
   const dateInfo = {
-    departureDay: '15',
-    departureMonth:'Μάρτιος 2025',
+    departureDay: '19',
     arrivalDay: '22',
-    arrivalMonth: ''
   }
 
   const passengerInfo = {
@@ -41,6 +39,7 @@ describe('book ticket', () => {
   beforeEach(() => {
     cy.visit('https://www.airtickets.gr/')
     bookTicket.setCookies()
+
   });
 
   it('book ticket for flight', () => {

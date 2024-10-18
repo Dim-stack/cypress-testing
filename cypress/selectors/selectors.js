@@ -1,4 +1,4 @@
-import passengerType from "../support/passenger";
+import passengerType from "../support/bookTicket";
 
 const airportSelectors = {
 
@@ -14,10 +14,11 @@ const dateSelectors = {
     calendarOptions: 'transportable-input[aria-label ="calendar options"]',
     oneWay: '[name = "isRoundtrip"][value = "0"]',
     twoWay: '[name = "isRoundtrip"][value = "1"]',
-    MonthYear: 'react-day-picker-1',
+    monthDeparture: 'react-day-picker-1',
+    monthArrival: 'react-day-picker-2',
     nextMonth: 'Go to next month',
     departureDate: 'react-day-picker-1',
-    arrivalDate: 'react-day-picker-1'
+    arrivalDate: 'react-day-picker-2'
 }
 
 
@@ -35,14 +36,14 @@ const filterSelectors = {
 
 const buttonSelectors = {
     searchButton: 'btn-search',
-    consentButton: 'Consent',
-    cookiesButton: 'Αποδοχή όλων'
+    consentButton: 'fc-choice-dialog',
+    cookiesButton: 'Αποδοχή όλων',
+    accommondationButton: 'acommondation_switch',
 }
 
 
-
 export default {
-    airportSelectors, // Exporting as an object
+    airportSelectors,
     dateSelectors,
     passengerSelectors,
     filterSelectors,
